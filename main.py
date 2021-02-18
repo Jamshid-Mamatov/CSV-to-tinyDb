@@ -18,6 +18,7 @@ for doc in data:
     doc_['company']=comp
     list_doc.append(doc_)
     
-print(list_doc)
+# print(list_doc)
 
+db.insert_multiple(list_doc)
 
