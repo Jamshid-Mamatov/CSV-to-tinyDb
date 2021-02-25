@@ -3,10 +3,8 @@ from tinydb import TinyDB,Query
 db=TinyDB("database.json")
 
 q=Query()
+
+db.remove(q.username=="Azim")
 data=db.all()
-user=db.search(q.username=="Jamshid")
+print(data)
 
-print(user)
-
-# for i in data:
-#     print(i)
